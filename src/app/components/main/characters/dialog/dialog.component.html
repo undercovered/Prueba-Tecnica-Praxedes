@@ -1,0 +1,32 @@
+<h3 mat-dialog-title class="titulo"> Información del Personaje</h3>
+<mat-dialog-content class="main">
+    <div class="contenedor list">
+        <div class="imagen-personaje">
+            <img src="{{personaje.image}}" alt="" class="imagen">
+        </div>
+        <div class="informacion-personaje">
+            <div class="informacion-nombre grid">
+                <div class="label">Nombre:</div>
+                <div class="valor">{{personaje.name}}</div>
+            </div>
+            <div class="informacion-status grid">
+                <div class="label">Nombre:</div>
+                <div class="valor">{{personaje.status}}</div>
+            </div>
+            <div class="informacion-gender grid">
+                <div class="label">Nombre:</div>
+                <div class="valor">{{personaje.gender}}</div>
+            </div>
+            <div class="favorito">
+                <button type="button" class="boton-favorito" (click)="mostrar()"><span *ngIf ="favorito" class="material-symbols-outlined">star</span><span *ngIf ="!favorito"
+                        class="material-symbols-outlined">grade </span><span>Favorito</span></button>
+            </div>
+
+
+        </div>
+
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cerrar</button>
+</mat-dialog-actions>

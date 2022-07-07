@@ -1,0 +1,58 @@
+.contenedor {
+    opacity: 0;
+    animation-name: contenedor;
+    animation-duration:2.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes contenedor {
+    0% { opacity: 0}
+    100% { opacity: 1}
+  }
+.titulo-principal{
+    padding: 1rem;
+}
+.titulo-principal__titulo {
+    text-transform: uppercase;
+}
+
+/* Navegacion */
+
+h1 {
+    font-size: 3rem;
+}
+@media (min-width: 480px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+.boton-logout {
+    margin: 1rem;
+}
+.logout {
+    padding: 1rem;
+    border: none;
+}
+.logout:hover {
+    cursor:pointer;
+}
+.logout {
+    background-color: rgb(161, 161, 253);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 0.5s ease-out;
+}
+
+.logout:hover {
+    background-color: rgb(109, 109, 255);
+    
+}

@@ -1,0 +1,78 @@
+
+
+
+.contenedor {
+    opacity: 0;
+    animation-name: contenedor;
+    animation-duration:2.5s;
+    animation-fill-mode: forwards;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display:flex;
+    justify-content: center;
+}
+@keyframes contenedor {
+    0% { opacity: 0}
+    100% { opacity: 1}
+  }
+.contenedor__login {
+    
+    margin-top: 5rem
+            
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px ;
+    -webkit-box-shadow: 7px 6px 68px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 6px 68px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 6px 68px 0px rgba(0,0,0,0.75);
+    border-radius: 1rem;
+    width: fit-content;
+    padding: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.login__campos {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+
+}
+.login__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.campo_ {
+    
+}
+.logo {
+    max-width: 40%;
+}
+
+.boton {
+    margin-top: 2rem;
+
+}
+.btn__login {
+    background-color: rgb(161, 161, 253);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 0.5s ease-out;
+}
+
+.btn__login:hover {
+    background-color: rgb(109, 109, 255);
+    
+}

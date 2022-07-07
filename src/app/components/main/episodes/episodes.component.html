@@ -1,0 +1,37 @@
+<div class="titulo2">
+    <h2 class="titulo2__titulo">
+        Episodios
+    </h2>
+</div>
+<div class="barra-busqueda">
+    
+</div>
+
+<div class="episodios">
+    <div class="contenedor list">
+        <div *ngFor="let episodio of episodios " class="episodios_info capitulos">
+            <div class="campo">
+                <div class="campo__titulo">
+                    <h3 class="titulo">
+                        {{episodio.name}}
+                    </h3>                    
+                </div>
+                <div class="campo__episodio">
+                    <p class="episodio">
+                        {{episodio.episode}}
+                    </p>
+                </div>
+                <div class="campo__informacion">
+                    <button type="submit" (click)="verEpisodio(episodio.characters)" class="boton">
+                        Ver Informacion...
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <mat-paginator style = "background-color: #f4f4f4" [length]="episodios?.length" [pageSizeOptions]="[4]" aria-label="Select page" (page)="handlePage($event)">
+    </mat-paginator>
+
+
+</div>

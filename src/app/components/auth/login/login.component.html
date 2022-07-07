@@ -1,0 +1,30 @@
+<main class="contenedor">
+    <section class="contenedor__login">
+        <form class="login" [formGroup]="form"
+        (ngSubmit)="Login()">
+            <div class="login__campos">
+                <div class="campo">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Correo Electrónico</mat-label>
+                        <input matInput type="email" placeholder="Correo Electrónico" class="campo_"
+                        formControlName="username"
+                        matTooltip="Correo electrónico requerido">
+                    </mat-form-field>
+                </div>
+                <div class="campo">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput type="password" placeholder="Contraseña" class="campo_" 
+                        formControlName="password" matTooltip="Contraseña requerida">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="boton">
+                <button class="btn__login" type="submit" [disabled]="form.invalid">Iniciar Sesión</button>
+            </div>
+            <div class="boton">
+                <a href="/auth/register">Registrese</a>
+            </div>
+        </form> 
+    </section>
+</main>

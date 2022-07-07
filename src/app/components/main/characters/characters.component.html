@@ -1,0 +1,26 @@
+<div class="contenedor">
+    <div class="titulo2">
+        <h2 class="titulo2__titulo">
+            Personajes
+        </h2>
+    </div>
+    <div class="episodios">
+        <div class="contenedor list" *ngIf = "validador">
+            <div *ngFor="let personaje of personajes" class="personajes_info" style="background-image: url({{personaje.image}});">
+                <div class="campo">
+                    <div class="campo__informacion">
+                        <button class="boton" (click)="abrir(personaje)">
+                            Ver Informacion...
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cargando">
+            <mat-spinner  *ngIf = "!validador"></mat-spinner>
+        </div>
+    </div>
+
+</div>
+
+

@@ -1,0 +1,56 @@
+<main class="contenedor">
+    <section class="contenedor__registro">
+        <form class="registro" [formGroup]="form"
+        (ngSubmit)="registrar()">
+            <div class="registro__campos">
+                <div class="campo">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Nombre</mat-label>
+                        <input matInput type="text" placeholder="Nombre" class="campo_" formControlName="nombre"
+                        matTooltip="Nombre requerido">
+                    </mat-form-field>
+                </div>
+                <div class="campo">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Apellido</mat-label>
+                        <input matInput type="text" placeholder="Apellido" class="campo_" formControlName="apellido"
+                        matTooltip="apellido requerido">
+                    </mat-form-field>
+                </div>
+                <div class="campo">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Documento de identidad</mat-label>
+                        <input matInput type="number" placeholder="Documento de identidad" class="campo_"
+                        formControlName="docIdentidad" matTooltip="Documento de identidad requerido">
+
+                    </mat-form-field>
+                </div>
+                <div class="campo">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Correo Electrónico</mat-label>
+                        <input matInput type="email" placeholder="Correo Electrónico" class="campo_"
+                        formControlName="email"
+                        matTooltip="Correo Electrónico requerido">
+                    </mat-form-field>
+                </div>
+                <div class="campo">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput type="password" placeholder="Contraseña" class="campo_" formControlName="password"
+                        matTooltip="Contraseña requerido">
+                    </mat-form-field>
+                </div>
+                <div class="campo">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Cia</mat-label>
+                        <input matInput type="text" placeholder="Cia" class="campo_" formControlName="compania"
+                        matTooltip="Compañia Requerida">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="boton">
+                <button class="btn__registro" type="submit">Registrar</button>
+            </div>
+        </form> 
+    </section>
+</main>
